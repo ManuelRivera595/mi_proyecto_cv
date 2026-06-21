@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Currículum Vitae Profesional</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="editor-panel">
+        <button class="btn-download" onclick="downloadPDF()">⬇ Descargar CV en PDF</button>
+        
+        <h2>Datos Personales</h2>
+        <div class="form-group">
+            <label for="input-name">Nombre Completo</label>
+            <input type="text" id="input-name" value="Juan Pérez" oninput="updateCV()">
+        </div>
+        <div class="form-group">
+            <label for="input-title">Título Profesional</label>
+            <input type="text" id="input-title" value="Desarrollador Web Front-End" oninput="updateCV()">
+        </div>
+        <div class="form-group">
+            <label for="input-email">Correo Electrónico</label>
+            <input type="email" id="input-email" value="juan.perez@email.com" oninput="updateCV()">
+        </div>
+        <div class="form-group">
+            <label for="input-phone">Teléfono</label>
+            <input type="tel" id="input-phone" value="+123 456 789" oninput="updateCV()">
+        </div>
+        <div class="form-group">
+            <label for="input-location">Ubicación</label>
+            <input type="text" id="input-location" value="Madrid, España" oninput="updateCV()">
+        </div>
+
+        <h2>Perfil Profesional</h2>
+        <div class="form-group">
+            <label for="input-profile">Resumen de tu trayectoria</label>
+            <textarea id="input-profile" oninput="updateCV()">Profesional proactivo con experiencia en la creación de soluciones web interactivas y optimizadas. Apasionado por el código limpio y el diseño UX/UI.</textarea>
+        </div>
+
+        <h2>Experiencia Laboral</h2>
+        <div class="form-group">
+            <label for="input-experience">Detalla tus puestos anteriores (Empresa, rol, fechas y logros)</label>
+            <textarea id="input-experience" oninput="updateCV()">• Desarrollador Senior en Tech Solutions (2023 - Presente)
+Lideré el desarrollo de la nueva plataforma e-commerce aumentando las ventas en un 20%.
+
+• Desarrollador Junior en Web Agency (2021 - 2023)
+Mantenimiento de aplicaciones críticas y optimización de rendimiento de carga web.</textarea>
+        </div>
+
+        <h2>Educación</h2>
+        <div class="form-group">
+            <label for="input-education">Títulos, instituciones y fechas</label>
+            <textarea id="input-education" oninput="updateCV()">• Grado en Ingeniería Informática
+Universidad Tecnológica (2017 - 2021)</textarea>
+        </div>
+
+        <h2>Habilidades</h2>
+        <div class="form-group">
+            <label for="input-skills">Habilidades técnicas o blandas</label>
+            <textarea id="input-skills" oninput="updateCV()">HTML5, CSS3, JavaScript, React, Git, Trabajo en equipo, Resolución de problemas.</textarea>
+        </div>
+    </div>
+
+    <div class="preview-panel">
+        <button class="btn-download" onclick="downloadPDF()">⬇ Descargar CV en PDF</button>
+        <div id="cv-template">
+            <div class="cv-header">
+                <h1 class="cv-name" id="cv-name">Juan Pérez</h1>
+                <div class="cv-title" id="cv-title">Desarrollador Web Front-End</div>
+                <div class="cv-contact">
+                    <span id="cv-email">juan.perez@email.com</span> | 
+                    <span id="cv-phone">+123 456 789</span> | 
+                    <span id="cv-location">Madrid, España</span>
+                </div>
+            </div>
+
+            <div class="cv-section-title">Perfil Profesional</div>
+            <div class="cv-block" id="cv-profile">Profesional proactivo con experiencia en la creación de soluciones web interactivas y optimizadas. Apasionado por el código limpio y el diseño UX/UI.</div>
+
+            <div class="cv-section-title">Experiencia Laboral</div>
+            <div class="cv-block" id="cv-experience">• Desarrollador Senior en Tech Solutions (2023 - Presente)
+Lideré el desarrollo de la nueva plataforma e-commerce aumentando las ventas en un 20%.
+
+• Desarrollador Junior en Web Agency (2021 - 2023)
+Mantenimiento de aplicaciones críticas y optimización de rendimiento de carga web.</div>
+
+            <div class="cv-section-title">Educación</div>
+            <div class="cv-block" id="cv-education">• Grado en Ingeniería Informática
+Universidad Tecnológica (2017 - 2021)</div>
+
+            <div class="cv-section-title">Habilidades</div>
+            <div class="cv-block" id="cv-skills">HTML5, CSS3, JavaScript, React, Git, Trabajo en equipo, Resolución de problemas.</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

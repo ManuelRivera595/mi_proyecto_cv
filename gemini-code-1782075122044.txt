@@ -1,0 +1,7 @@
+mi-proyecto-cv/
+│
+├── index.html
+├── css/
+│   └── estilos.css
+└── js/
+    └── script.js
