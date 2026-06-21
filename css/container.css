@@ -1,0 +1,69 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Times New Roman', Times, serif; /* Tipografía clásica de CV */
+    background-color: #525659;
+    color: #333;
+    padding: 10px;
+}
+
+.actions-bar {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+}
+.btn-download, .btn-edit {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+.btn-download { background: #27ae60; color: white; }
+.btn-download:hover { background: #219653; }
+.btn-edit { background: #ffffff; color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+
+/* Diseño de la hoja física simulada */
+.cv-page {
+    background: white;
+    width: 100%;
+    max-width: 210mm; /* Ancho A4 */
+    min-height: 297mm; /* Alto A4 */
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px) {
+    .cv-page { padding: 40px; }
+}
+
+.cv-header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 12px; margin-bottom: 15px; }
+.cv-name { font-size: 26px; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; }
+.cv-title { font-size: 15px; color: #3498db; font-weight: bold; margin: 4px 0; }
+.cv-contact { font-size: 11px; color: #666; font-family: sans-serif; }
+
+.cv-section { margin-bottom: 15px; }
+.cv-section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+}
+.cv-block { font-size: 13px; line-height: 1.4; white-space: pre-line; }
+
+/* Regla especial para la impresión limpia del PDF nativo */
+@media print {
+    .actions-bar { display: none; }
+    body { background: white; padding: 0; }
+    .cv-page { box-shadow: none; margin: 0; padding: 0; }
+}

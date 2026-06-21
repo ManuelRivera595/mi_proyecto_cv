@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Editar CV</title>
+    <link rel="stylesheet" href="../css/container.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>✍️ Editor de Currículum Vitae</h1>
+            <p>Los cambios se guardan automáticamente. Puedes ver el resultado en tu página principal.</p>
+            <a href="index.html" target="_blank" class="btn-view">👁️ Ver e Imprimir CV</a>
+            <a href="index.html" class="btn-view"> Volver index</a>
+        </header>
+
+        <main class="form-grid">
+            <section class="form-section">
+                <h2>Datos Personales</h2>
+                <div class="form-group">
+                    <label for="input-name">Nombre Completo</label>
+                    <input type="text" id="input-name">
+                </div>
+                <div class="form-group">
+                    <label for="input-title">Título Profesional</label>
+                    <input type="text" id="input-title">
+                </div>
+                <div class="form-group">
+                    <label for="input-email">Correo Electrónico</label>
+                    <input type="email" id="input-email">
+                </div>
+                <div class="form-group">
+                    <label for="input-phone">Teléfono</label>
+                    <input type="tel" id="input-phone">
+                </div>
+                <div class="form-group">
+                    <label for="input-location">Ubicación</label>
+                    <input type="text" id="input-location">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Perfil Profesional</h2>
+                <div class="form-group">
+                    <label for="input-profile">Resumen de tu trayectoria</label>
+                    <textarea id="input-profile"></textarea>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Experiencia Laboral</h2>
+                <div class="form-group">
+                    <label for="input-experience">Puestos, empresas y logros</label>
+                    <textarea id="input-experience"></textarea>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Educación y Habilidades</h2>
+                <div class="form-group">
+                    <label for="input-education">Estudios académicos</label>
+                    <textarea id="input-education"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="input-skills">Habilidades (separadas por comas)</label>
+                    <textarea id="input-skills"></textarea>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

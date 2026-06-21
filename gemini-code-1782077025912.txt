@@ -1,0 +1,9 @@
+mi-proyecto-cv/
+│
+├── index.html          <-- La vista final del CV (público / descargable)
+├── container.html      <-- El panel de administración (formulario de llenado)
+├── css/
+│   ├── index.css       <-- Estilos exclusivos de la hoja del CV
+│   └── container.css   <-- Estilos exclusivos del panel de edición
+└── js/
+    └── script.js       <-- Lógica compartida, guardado y sincronización
