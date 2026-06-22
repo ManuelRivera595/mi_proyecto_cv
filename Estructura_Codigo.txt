@@ -12,3 +12,6 @@ mi-proyecto-cv/
 │   └── container.css   <-- Estilos exclusivos del panel de edición
 └── js/
     └── script.js       <-- Lógica compartida, guardado y sincronización
+
+
+    Mapa o gia estructural, el esqueleto de toda mi pagina
