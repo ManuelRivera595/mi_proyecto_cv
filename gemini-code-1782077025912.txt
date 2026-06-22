@@ -1,6 +1,9 @@
 mi-proyecto-cv/
 │
 ├── index.html          <-- La vista final del CV (público / descargable)
+|      |
+|      |──              <-- Se mostrara las diplomas de los diferentes conocimientos adquiridos
+|
 ├── container.html      <-- El panel de administración (formulario de llenado)
 ├── css/
 │   ├── index.css       <-- Estilos exclusivos de la hoja del CV

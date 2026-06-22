@@ -8,7 +8,8 @@ const defaultData = {
     profile: "Profesional proactivo con experiencia en la creación de soluciones web interactivas y optimizadas. Apasionado por el código limpio y el diseño UX/UI.",
     experience: "• Desarrollador Senior en Tech Solutions (2023 - Presente)\nLideré el desarrollo de la nueva plataforma e-commerce aumentando las ventas en un 20%.\n\n• Desarrollador Junior en Web Agency (2021 - 2023)\nMantenimiento de aplicaciones críticas.",
     education: "• Grado en Ingeniería Informática\nUniversidad Tecnológica (2017 - 2021)",
-    skills: "HTML5, CSS3, JavaScript, React, Git, Trabajo en equipo, Resolución de problemas."
+    skills: "HTML5, CSS3, JavaScript, React, Git, Trabajo en equipo, Resolución de problemas.",
+    diplomas: "aca sera un archivo donde se subiran las diplomas y se vera en el index",
 };
 
 // 1. COMPORTAMIENTO PARA PANEL DE EDICIÓN (container.html)
@@ -22,7 +23,8 @@ if (document.getElementById('input-name')) {
         profile: document.getElementById('input-profile'),
         experience: document.getElementById('input-experience'),
         education: document.getElementById('input-education'),
-        skills: document.getElementById('input-skills')
+        skills: document.getElementById('input-skills'),
+        diplomas: document.getElementById('input-diplomas')
     };
 
     // Cargar datos guardados previamente en los campos de texto
@@ -54,6 +56,7 @@ if (document.getElementById('cv-name')) {
     document.getElementById('cv-experience').innerText = savedData.experience;
     document.getElementById('cv-education').innerText = savedData.education;
     document.getElementById('cv-skills').innerText = savedData.skills;
+    document.getElementById('cv-diplomas').innerText = savedData.diplomas;
 }
 
 // 3. FUNCIÓN DE DESCARGA PDF (index.html)
